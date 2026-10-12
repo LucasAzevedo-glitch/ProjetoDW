@@ -4,7 +4,7 @@ function logar() {
 
     if (login === 'admin' && senha === '1234') {
         alert('Login bem-sucedido!');
-        location.href = 'rotina.html';  
+        location.href = '../rotina.html';  
     } else {
         alert('Usuário ou senha incorretos. Tente novamente.');
     }

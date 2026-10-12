@@ -160,3 +160,309 @@
   }
 }
 @layer utilities;
+:root {
+  --verde-escuro: #174936;
+  --verde-principal: #16834A;
+  --verde-claro: #E5F3E7;
+  --fundo: #F8FAF6;
+  --branco: #FFFFFF;
+  --texto: #26352E;
+  --texto-secundario: #647067;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+header {
+  background-color: var(--branco);
+  padding: 5px 3%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+header nav div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header nav div a {
+  color: var(--texto);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+header nav div a:hover {
+  color: var(--verde-principal);
+}
+header nav div a:last-child {
+  background-color: var(--verde-principal);
+  color: var(--branco);
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+header nav div a:last-child:hover {
+  background-color: var(--verde-escuro);
+}
+header img {
+  width: 150px;
+  height: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button, input {
+  font: inherit;
+}
+#inicio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  padding: 70px 8%;
+  overflow: hidden;
+  background-color: var(--fundo);
+}
+#inicio > div {
+  flex: 1;
+}
+#inicio > div:first-child {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+#inicio > div:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: 1;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 45%);
+  mask-image: linear-gradient(to right, transparent 0%, black 45%);
+}
+#inicio h1 {
+  color: var(--verde-escuro);
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  width: 55%;
+}
+#inicio p {
+  color: var(--texto-secundario);
+  font-size: 17px;
+  margin-bottom: 25px;
+  width: 50%;
+}
+#inicio a {
+  display: inline-block;
+  background-color: var(--verde-principal);
+  color: var(--branco);
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+#inicio a:hover {
+  background-color: var(--verde-escuro);
+}
+#inicio img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+#estatisticas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 8%;
+  background-color: var(--verde-claro);
+}
+#estatisticas > div {
+  flex: 1;
+  min-width: 200px;
+  padding: 25px;
+  background-color: var(--branco);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(23, 73, 54, 0.08);
+}
+#estatisticas > div p:first-child {
+  color: var(--verde-principal);
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#estatisticas > div p:last-child {
+  color: var(--texto-secundario);
+  font-size: 14px;
+}
+#estatisticas > p {
+  width: 100%;
+  color: var(--texto-secundario);
+  font-size: 12px;
+  text-align: center;
+}
+#sobre {
+  padding: 45px 10%;
+  background-color: var(--branco);
+  text-align: center;
+}
+#sobre > p:first-child {
+  color: var(--verde-principal);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#sobre h2 {
+  color: var(--verde-escuro);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#sobre > p:last-child {
+  max-width: 750px;
+  margin: 0 auto;
+  color: var(--texto-secundario);
+  font-size: 17px;
+  line-height: 1.8;
+}
+#comofunciona {
+  padding: 45px 10%;
+  background-color: var(--fundo);
+  text-align: center;
+}
+#comofunciona > p:first-child {
+  color: var(--verde-principal);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#comofunciona h2 {
+  color: var(--verde-escuro);
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+#comofunciona > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+#comofunciona article {
+  flex: 1;
+  padding: 30px 25px;
+  background-color: var(--branco);
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(23, 73, 54, 0.08);
+  transition: transform 0.3s;
+}
+#comofunciona article:hover {
+  transform: translateY(-5px);
+}
+#comofunciona article > p:first-child {
+  color: var(--verde-principal);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#comofunciona h3 {
+  color: var(--verde-escuro);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#comofunciona article p:last-child {
+  color: var(--texto-secundario);
+  font-size: 15px;
+  line-height: 1.7;
+}
+#acesso {
+  margin: 60px 10%;
+  padding: 50px 30px;
+  background-color: var(--verde-escuro);
+  border-radius: 16px;
+  text-align: center;
+}
+#acesso h2 {
+  color: var(--branco);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+#acesso p {
+  color: var(--verde-claro);
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+#acesso a {
+  display: inline-block;
+  padding: 13px 25px;
+  background-color: var(--branco);
+  color: var(--verde-escuro);
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+#acesso a:hover {
+  background-color: var(--verde-claro);
+  color: var(--verde-principal);
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 15px 10%;
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+}
+footer > div {
+  flex: 1 1 200px;
+}
+footer img {
+  width: 140px;
+  margin-bottom: 15px;
+}
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+footer p {
+  color: var(--verde-claro);
+  font-size: 14px;
+  line-height: 1.7;
+}
+footer a {
+  display: block;
+  width: fit-content;
+  margin-bottom: 10px;
+  color: var(--verde-claro);
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: var(--branco);
+}
