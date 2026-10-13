@@ -10,7 +10,7 @@
     background-color: var(--fundo);
 }
 
-#inicio > div {
+/* #inicio > div {
     flex: 1;
 }
 
@@ -67,7 +67,7 @@
     object-fit: cover;
     object-position: center;
     border-radius: 0;
-}
+} */
 
 /* Estatísticas */
 
@@ -80,64 +80,12 @@
     background-color: var(--verde-claro);
 }
 
-#estatisticas > div {
-    flex: 1;
-    min-width: 200px;
-    padding: 25px;
-    background-color: var(--branco);
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(23, 73, 54, 0.08);
-}
-
-#estatisticas > div p:first-child {
-    color: var(--verde-principal);
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#estatisticas > div p:last-child {
-    color: var(--texto-secundario);
-    font-size: 14px;
-}
-
-#estatisticas > p {
-    width: 100%;
-    color: var(--texto-secundario);
-    font-size: 12px;
-    text-align: center;
-}
-
 /* Sobre */
 
 #sobre {
     padding: 45px 10%;
     background-color: var(--branco);
     text-align: center;
-}
-
-#sobre > p:first-child {
-    color: var(--verde-principal);
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-#sobre h2 {
-    color: var(--verde-escuro);
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-#sobre > p:last-child {
-    max-width: 750px;
-    margin: 0 auto;
-    color: var(--texto-secundario);
-    font-size: 17px;
-    line-height: 1.8;
 }
 
 /* Como funciona */
@@ -148,61 +96,6 @@
     text-align: center;
 }
 
-#comofunciona > p:first-child {
-    color: var(--verde-principal);
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-#comofunciona h2 {
-    color: var(--verde-escuro);
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-#comofunciona > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
-
-#comofunciona article {
-    flex: 1;
-    padding: 30px 25px;
-    background-color: var(--branco);
-    border-radius: 12px;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(23, 73, 54, 0.08);
-    transition: transform 0.3s;
-}
-
-#comofunciona article:hover {
-    transform: translateY(-5px);
-}
-
-#comofunciona article > p:first-child {
-    color: var(--verde-principal);
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#comofunciona h3 {
-    color: var(--verde-escuro);
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-#comofunciona article p:last-child {
-    color: var(--texto-secundario);
-    font-size: 15px;
-    line-height: 1.7;
-}
-
 /* Acesso à rotina */
 
 #acesso {
@@ -211,75 +104,4 @@
     background-color: var(--verde-escuro);
     border-radius: 16px;
     text-align: center;
-}
-
-#acesso h2 {
-    color: var(--branco);
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-#acesso p {
-    color: var(--verde-claro);
-    font-size: 16px;
-    margin-bottom: 25px;
-}
-
-#acesso a {
-    display: inline-block;
-    padding: 13px 25px;
-    background-color: var(--branco);
-    color: var(--verde-escuro);
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-#acesso a:hover {
-    background-color: var(--verde-claro);
-    color: var(--verde-principal);
-}
-
-/* Rodapé */
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 15px 10%;
-    background-color: var(--verde-escuro);
-    color: var(--branco);
-}
-
-footer > div {
-    flex: 1 1 200px;
-}
-
-footer img {
-    width: 140px;
-    margin-bottom: 15px;
-}
-
-footer h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-footer p {
-    color: var(--verde-claro);
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-footer a {
-    display: block;
-    width: fit-content;
-    margin-bottom: 10px;
-    color: var(--verde-claro);
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: var(--branco);
 }

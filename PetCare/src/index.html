@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare - Cuidados com seu pet</title>
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -23,32 +25,47 @@
 
     <main>
         <section id="inicio">
-            <div>   
-                <h1>Uma rotina mais organizada para o cuidado do seu pet.</h1>
-                <p>O PetCare é um projeto educativo criado para ajudar a organizar uma rotina fictícia de cuidados com animais de estimação.</p>
-                <a href="./Login/login.html">Começar minha rotina →</a>
+            <div class="relative z-[2] flex-1">
+                <h1 class="!mb-5 !w-[55%] text-[42px] leading-[1.2] font-bold text-[#174936]">
+                    Uma rotina mais organizada para o cuidado do seu pet.
+                </h1>
+                <p class="!mb-[25px] !w-1/2 text-[17px] text-[#647067]">
+                    O PetCare é um projeto educativo criado para ajudar a organizar uma rotina fictícia de cuidados com
+                    animais de estimação.
+                </p>
+                <a href="./Login/login.html" class="inline-block rounded-lg bg-[#16834A] !px-[22px] !py-[13px] font-bold !text-white transition-colors duration-300 hover:bg-[#174936]">
+                    Começar minha rotina →
+                </a>
             </div>
-            <div class="imagem-fundo">
-                <img src="../imagens/pets.png" alt="Cachorro e gato">
+            <div class="absolute top-0 right-0 z-[1] h-full w-[65%] [mask-image:linear-gradient(to_right,transparent_0%,black_45%)]">
+                <img src="../imagens/pets.png" alt="Cachorro e gato" class="!h-full !w-full !max-w-none rounded-none object-cover object-center">
             </div>
         </section>
 
         <section id="estatisticas">
-            <div>
-                <p>+1.500</p>
-                <p>Usuários cadastrados</p>
+            <h2 class="!mb-2 !w-full text-center text-[32px] font-bold text-[#174936]">
+                PetCare em números
+            </h2>
+
+            <div
+                class="min-w-[200px] flex-1 rounded-md bg-white p-[30px] text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <p class="mb-[5px] text-[30px] font-bold text-[#16834A]">+1.500</p>
+                <p class="text-sm text-[#647067]">Usuários cadastrados</p>
             </div>
-            <div>
-                <p>+8.000</p>
-                <p>Rotinas acompanhadas</p>
+            <div
+                class="min-w-[200px] flex-1 rounded-md bg-white p-[30px] text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <p class="mb-[5px] text-[30px] font-bold text-[#16834A]">+8.000</p>
+                <p class="text-sm text-[#647067]">Rotinas acompanhadas</p>
             </div>
-            <div>
-                <p>+12.000</p>
-                <p>Tarefas concluídas</p>
+            <div
+                class="min-w-[200px] flex-1 rounded-md bg-white p-[30px] text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <p class="mb-[5px] text-[30px] font-bold text-[#16834A]">+12.000</p>
+                <p class="text-sm text-[#647067]">Tarefas concluídas</p>
             </div>
-            <div>
-                <p>95%</p>
-                <p>De satisfação</p>
+            <div
+                class="min-w-[200px] flex-1 rounded-md bg-white p-[30px] text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <p class="mb-[5px] text-[30px] font-bold text-[#16834A]">95%</p>
+                <p class="text-sm text-[#647067]">De satisfação</p>
             </div>
             <!--
             <p>Dados apresentados exclusivamente para fins demonstrativos.</p>
@@ -56,38 +73,66 @@
         </section>
 
         <section id="sobre">
-            <p>Sobre o Projeto</p>
-            <h2>O que é o PetCare?</h2>
-            <p>O PetCare é uma aplicação web educativa que apresenta uma rotina fictícia de cuidados com animais de estimação. O objetivo é demonstrar como informações podem ser organizadas e processadas utilizando JavaScript.</p>
+            <p class="mb-4 text-sm font-bold uppercase tracking-[3px] text-[#16834A]">
+                Sobre o Projeto
+            </p>
+            <h2 class="!mb-6 text-4xl font-normal text-[#174936]">
+                O que é o PetCare?
+            </h2>
+            <p class="mx-auto text-base leading-6 text-[#647067]">
+                O PetCare é uma aplicação web educativa que apresenta uma rotina fictícia de cuidados com animais de
+                estimação. O objetivo é demonstrar como informações podem ser organizadas e processadas utilizando
+                JavaScript.
+            </p>
         </section>
 
         <section id="comofunciona">
-            <p>Como funciona?</p>
-            <h2>Acompanhe a rotina em três passos</h2>
-            <div>
-                <article>
-                    <p>01</p>
-                    <h3>Cadastre sua rotina</h3>
-                    <p>Defina as tarefas que fazem parte da rotina do seu pet.</p>
+            <p class="!mb-[10px] text-sm font-bold uppercase tracking-[2px] text-[#16834A]">
+                Como funciona?
+            </p>
+            <h2 class="!mb-10 text-[32px] font-bold text-[#174936]">
+                Acompanhe a rotina em três passos
+            </h2>
+            <div class="flex flex-wrap justify-center gap-[25px]">
+                <article
+                    class="min-w-[200px] flex-1 rounded-xl bg-white !px-[25px] !py-[30px] text-left shadow-[0_4px_12px_rgba(23,73,54,0.08)] transition-transform duration-300 hover:-translate-y-[5px]">
+                    <p class="mb-[15px] text-[28px] font-bold text-[#16834A]">01</p>
+                    <h3 class="mb-[10px] text-xl font-bold text-[#174936]">Cadastre sua rotina</h3>
+                    <p class="text-[15px] leading-[1.7] text-[#647067]">
+                        Defina as tarefas que fazem parte da rotina do seu pet.
+                    </p>
                 </article>
-                <article>
-                    <p>02</p>
-                    <h3>Estabeleça suas metas</h3>
-                    <p>Defina um tempo planejado para cada uma das tarefas.</p>
+                <article
+                    class="min-w-[200px] flex-1 rounded-xl bg-white !px-[25px] !py-[30px] text-left shadow-[0_4px_12px_rgba(23,73,54,0.08)] transition-transform duration-300 hover:-translate-y-[5px]">
+                    <p class="mb-[15px] text-[28px] font-bold text-[#16834A]">02</p>
+                    <h3 class="mb-[10px] text-xl font-bold text-[#174936]">Estabeleça suas metas</h3>
+                    <p class="text-[15px] leading-[1.7] text-[#647067]">
+                        Defina um tempo planejado para cada uma das tarefas.
+                    </p>
                 </article>
-                <article>
-                    <p>03</p>
-                    <h3>Acompanhe os resultados</h3>
-                    <p>O sistema compara os valores e apresenta o desempenho da rotina.</p>
+                <article
+                    class="min-w-[200px] flex-1 rounded-xl bg-white !px-[25px] !py-[30px] text-left shadow-[0_4px_12px_rgba(23,73,54,0.08)] transition-transform duration-300 hover:-translate-y-[5px]">
+                    <p class="mb-[15px] text-[28px] font-bold text-[#16834A]">03</p>
+                    <h3 class="mb-[10px] text-xl font-bold text-[#174936]">Acompanhe os resultados</h3>
+                    <p class="text-[15px] leading-[1.7] text-[#647067]">
+                        O sistema compara os valores e apresenta o desempenho da rotina.
+                    </p>
                 </article>
             </div>
         </section>
 
         <section id="acesso">
             <div>
-                <h2>Seu pet merece esse cuidado!</h2>
-                <p>Conheça o sistema e acompanhe uma rotina de cuidados de forma simples e organizada.</p>
-                <a href="./Login/login.html">Acessar rotina →</a>
+                <h2 class="mb-[15px] text-[30px] font-bold text-white">
+                    Seu pet merece esse cuidado!
+                </h2>
+                <p class="!mb-[25px] text-base text-[#E5F3E7]">
+                    Conheça o sistema e acompanhe uma rotina de cuidados de forma simples e organizada.
+                </p>
+                <a href="./Login/login.html"
+                    class="inline-block rounded-lg bg-white !px-[25px] !py-[13px] font-bold text-[#174936] transition-colors duration-300 hover:bg-[#E5F3E7] hover:text-[#16834A]">
+                    Acessar rotina →
+                </a>
             </div>
         </section>
     </main>
@@ -114,4 +159,5 @@
         </div>
     </footer>
 </body>
+
 </html>
