@@ -25,21 +25,21 @@
         </nav>
     </header>
 
-    <main class="!mx-auto w-full max-w-5xl !px-[5%] !py-12">
-        <p class="!mb-2 text-sm font-bold uppercase tracking-[3px] text-[#16834A]">Sua rotina</p>
-        <h1 class="!mb-3 text-4xl font-bold text-[#174936]">Rotina de cuidados do pet</h1>
-        <p class="!mb-10 text-[#647067]">Preencha os dados do seu pet e os minutos de cada tarefa do dia. Valores fictícios, apenas para estudo.</p>
+    <main class="mx-auto w-full max-w-5xl px-[5%] py-12">
+        <p class="mb-2 text-sm font-bold uppercase tracking-[3px] text-[#16834A]">Sua rotina</p>
+        <h1 class="mb-3 text-4xl font-bold text-[#174936]">Rotina de cuidados do pet</h1>
+        <p class="mb-10 text-[#647067]">Preencha os dados do seu pet e os minutos de cada tarefa do dia. Valores fictícios, apenas para estudo.</p>
 
-        <section id="pet" class="!mb-8 scroll-mt-6 rounded-2xl bg-white !p-8 shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
-            <h2 class="!mb-5 text-2xl font-bold text-[#174936]">Meu pet</h2>
+        <section id="pet" class="mb-8 scroll-mt-6 rounded-2xl bg-white p-8 shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+            <h2 class="mb-5 text-2xl font-bold text-[#174936]">Meu pet</h2>
             <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
                 <div>
-                    <label for="nomePet" class="!mb-2 block font-bold text-[#174936]">Nome do pet</label>
-                    <input type="text" id="nomePet" placeholder="Ex.: Thor" class="w-full rounded-lg border border-[#d6e3d9] bg-white !px-4 !py-3 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]">
+                    <label for="nomePet" class="mb-2 block font-bold text-[#174936]">Nome do pet</label>
+                    <input type="text" id="nomePet" placeholder="Ex.: Thor" class="w-full rounded-lg border border-[#d6e3d9] bg-white px-4 py-3 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]">
                 </div>
                 <div>
-                    <label for="especie" class="!mb-2 block font-bold text-[#174936]">Espécie</label>
-                    <select id="especie" class="w-full rounded-lg border border-[#d6e3d9] bg-white !px-4 !py-3 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]">
+                    <label for="especie" class="mb-2 block font-bold text-[#174936]">Espécie</label>
+                    <select id="especie" class="w-full rounded-lg border border-[#d6e3d9] bg-white px-4 py-3 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]">
                         <option value="Cachorro">Cachorro</option>
                         <option value="Gato">Gato</option>
                         <option value="Outro">Outro</option>
@@ -48,77 +48,77 @@
             </div>
         </section>
 
-        <section id="tarefas" class="!mb-8 scroll-mt-6 rounded-2xl bg-white !p-8 shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
-            <h2 class="!mb-2 text-2xl font-bold text-[#174936]">Tarefas do dia</h2>
-            <p class="!mb-5 text-sm text-[#647067]">Uma tarefa é considerada cumprida quando o tempo realizado é igual ou maior que o planejado.</p>
+        <section id="tarefas" class="mb-8 scroll-mt-6 rounded-2xl bg-white p-8 shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+            <h2 class="mb-2 text-2xl font-bold text-[#174936]">Tarefas do dia</h2>
+            <p class="mb-5 text-sm text-[#647067]">Uma tarefa é considerada cumprida quando o tempo realizado é igual ou maior que o planejado.</p>
             <div class="overflow-x-auto rounded-xl border border-[#E5F3E7]">
                 <table class="w-full min-w-[520px] border-collapse text-left">
                     <thead class="bg-[#E5F3E7] text-[#174936]">
                         <tr>
-                            <th class="!px-5 !py-3 text-sm font-bold">Tarefa</th>
-                            <th class="!px-5 !py-3 text-sm font-bold">Planejado (min)</th>
-                            <th class="!px-5 !py-3 text-sm font-bold">Realizado (min)</th>
+                            <th class="px-5 py-3 text-sm font-bold">Tarefa</th>
+                            <th class="px-5 py-3 text-sm font-bold">Planejado (min)</th>
+                            <th class="px-5 py-3 text-sm font-bold">Realizado (min)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="border-t border-[#E5F3E7]">
-                            <td class="!px-5 !py-3 font-medium">Passeio</td>
-                            <td class="!px-5 !py-3"><input type="number" id="plan0" min="0" value="30" aria-label="Passeio - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
-                            <td class="!px-5 !py-3"><input type="number" id="real0" min="0" value="30" aria-label="Passeio - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3 font-medium">Passeio</td>
+                            <td class="px-5 py-3"><input type="number" id="plan0" min="0" value="30" aria-label="Passeio - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3"><input type="number" id="real0" min="0" value="30" aria-label="Passeio - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
                         </tr>
                         <tr class="border-t border-[#E5F3E7]">
-                            <td class="!px-5 !py-3 font-medium">Alimentação</td>
-                            <td class="!px-5 !py-3"><input type="number" id="plan1" min="0" value="15" aria-label="Alimentação - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
-                            <td class="!px-5 !py-3"><input type="number" id="real1" min="0" value="15" aria-label="Alimentação - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3 font-medium">Alimentação</td>
+                            <td class="px-5 py-3"><input type="number" id="plan1" min="0" value="15" aria-label="Alimentação - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3"><input type="number" id="real1" min="0" value="15" aria-label="Alimentação - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
                         </tr>
                         <tr class="border-t border-[#E5F3E7]">
-                            <td class="!px-5 !py-3 font-medium">Escovação</td>
-                            <td class="!px-5 !py-3"><input type="number" id="plan2" min="0" value="10" aria-label="Escovação - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
-                            <td class="!px-5 !py-3"><input type="number" id="real2" min="0" value="5" aria-label="Escovação - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3 font-medium">Escovação</td>
+                            <td class="px-5 py-3"><input type="number" id="plan2" min="0" value="10" aria-label="Escovação - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3"><input type="number" id="real2" min="0" value="5" aria-label="Escovação - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
                         </tr>
                         <tr class="border-t border-[#E5F3E7]">
-                            <td class="!px-5 !py-3 font-medium">Brincadeira</td>
-                            <td class="!px-5 !py-3"><input type="number" id="plan3" min="0" value="20" aria-label="Brincadeira - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
-                            <td class="!px-5 !py-3"><input type="number" id="real3" min="0" value="25" aria-label="Brincadeira - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3 font-medium">Brincadeira</td>
+                            <td class="px-5 py-3"><input type="number" id="plan3" min="0" value="20" aria-label="Brincadeira - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3"><input type="number" id="real3" min="0" value="25" aria-label="Brincadeira - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
                         </tr>
                         <tr class="border-t border-[#E5F3E7]">
-                            <td class="!px-5 !py-3 font-medium">Limpeza do espaço</td>
-                            <td class="!px-5 !py-3"><input type="number" id="plan4" min="0" value="15" aria-label="Limpeza do espaço - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
-                            <td class="!px-5 !py-3"><input type="number" id="real4" min="0" value="10" aria-label="Limpeza do espaço - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3 font-medium">Limpeza do espaço</td>
+                            <td class="px-5 py-3"><input type="number" id="plan4" min="0" value="15" aria-label="Limpeza do espaço - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3"><input type="number" id="real4" min="0" value="10" aria-label="Limpeza do espaço - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
                         </tr>
                         <tr class="border-t border-[#E5F3E7]">
-                            <td class="!px-5 !py-3 font-medium">Água e remédios</td>
-                            <td class="!px-5 !py-3"><input type="number" id="plan5" min="0" value="5" aria-label="Água e remédios - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
-                            <td class="!px-5 !py-3"><input type="number" id="real5" min="0" value="5" aria-label="Água e remédios - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white !px-3 !py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3 font-medium">Água e remédios</td>
+                            <td class="px-5 py-3"><input type="number" id="plan5" min="0" value="5" aria-label="Água e remédios - planejado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
+                            <td class="px-5 py-3"><input type="number" id="real5" min="0" value="5" aria-label="Água e remédios - realizado" class="w-full max-w-[160px] rounded-lg border border-[#d6e3d9] bg-white px-3 py-2 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <button type="button" onclick="calcularRotina()"
-                class="!mt-6 cursor-pointer rounded-lg bg-[#16834A] !px-[22px] !py-[13px] font-bold text-white transition-colors duration-300 hover:bg-[#174936]">
+                class="mt-6 cursor-pointer rounded-lg bg-[#16834A] px-[22px] py-[13px] font-bold text-white transition-colors duration-300 hover:bg-[#174936]">
                 Calcular rotina →
             </button>
         </section>
 
-        <section id="resultados" class="scroll-mt-6 rounded-2xl bg-[#E5F3E7] !p-8">
-            <h2 class="!mb-2 text-2xl font-bold text-[#174936]">Resultados</h2>
-            <p id="resumoPet" class="!mb-5 text-[#647067]">Clique em "Calcular rotina" para ver os resultados.</p>
+        <section id="resultados" class="scroll-mt-6 rounded-2xl bg-[#E5F3E7] p-8">
+            <h2 class="mb-2 text-2xl font-bold text-[#174936]">Resultados</h2>
+            <p id="resumoPet" class="mb-5 text-[#647067]">Clique em "Calcular rotina" para ver os resultados.</p>
             <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                <div class="rounded-xl bg-white !p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <div class="rounded-xl bg-white p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
                     <p class="text-sm text-[#647067]">Tempo total</p>
-                    <p id="total" class="!mt-1 text-2xl font-bold text-[#16834A]">-</p>
+                    <p id="total" class="mt-1 text-2xl font-bold text-[#16834A]">-</p>
                 </div>
-                <div class="rounded-xl bg-white !p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <div class="rounded-xl bg-white p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
                     <p class="text-sm text-[#647067]">Média por tarefa</p>
-                    <p id="media" class="!mt-1 text-2xl font-bold text-[#16834A]">-</p>
+                    <p id="media" class="mt-1 text-2xl font-bold text-[#16834A]">-</p>
                 </div>
-                <div class="rounded-xl bg-white !p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <div class="rounded-xl bg-white p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
                     <p class="text-sm text-[#647067]">Tarefas cumpridas</p>
-                    <p id="cumpridas" class="!mt-1 text-2xl font-bold text-[#16834A]">-</p>
+                    <p id="cumpridas" class="mt-1 text-2xl font-bold text-[#16834A]">-</p>
                 </div>
-                <div class="rounded-xl bg-white !p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
+                <div class="rounded-xl bg-white p-6 text-center shadow-[0_4px_12px_rgba(23,73,54,0.08)]">
                     <p class="text-sm text-[#647067]">Classificação</p>
-                    <p id="classificacao" class="!mt-1 text-2xl font-bold text-[#16834A]">-</p>
+                    <p id="classificacao" class="mt-1 text-2xl font-bold text-[#16834A]">-</p>
                 </div>
             </div>
         </section>
