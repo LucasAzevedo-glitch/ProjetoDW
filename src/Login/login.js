@@ -1,13 +1,13 @@
-// Dados de acesso de demonstração
+// Login de teste
 const USUARIO_CORRETO = "admin";
 const SENHA_CORRETA = "1234";
 
-// Confere se usuário e senha estão corretos
+// Valida usuário e senha
 function validarLogin(usuario, senha) {
     return usuario === USUARIO_CORRETO && senha === SENHA_CORRETA;
 }
 
-// Chamada quando o formulário é enviado
+// Envia o login
 function logar() {
     const usuario = document.getElementById("login").value.trim();
     const senha = document.getElementById("senha").value;
@@ -22,6 +22,5 @@ function logar() {
         mensagem.textContent = "Usuário ou senha incorretos. Tente novamente.";
     }
 
-    // Impede o formulário de recarregar a página
     return false;
 }
