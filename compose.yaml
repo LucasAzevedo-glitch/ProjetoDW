@@ -1,6 +1,13 @@
 services:
-  tailwind:
+  typescript:
     build: .
     volumes:
       - .:/app
       - /app/node_modules
+
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html:ro
