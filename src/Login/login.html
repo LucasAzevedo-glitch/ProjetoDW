@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - PetCare</title>
     <link rel="stylesheet" href="../output.css">
-    <script src="login.js" defer></script>
+    <script type="module" src="../../dist/Login/login.js"></script>
 </head>
 
 <body class="flex min-h-screen flex-col">
@@ -28,7 +28,7 @@
                 <h1 class="mb-2 text-3xl font-bold text-[#174936]">Entrar no PetCare</h1>
                 <p class="mb-6 text-[15px] text-[#647067]">Faça login para acompanhar a rotina de cuidados do seu pet.</p>
 
-                <form onsubmit="return logar();">
+                <form id="form-login">
                     <label for="login" class="mb-1 block font-bold text-[#174936]">Usuário</label>
                     <input type="text" id="login" placeholder="Digite seu usuário" required
                         class="mb-4 w-full rounded-lg border border-[#d6e3d9] bg-white px-4 py-3 focus:border-[#16834A] focus:outline-2 focus:outline-[#16834A]">
